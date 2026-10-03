@@ -139,9 +139,9 @@ def enregistrer_code():
         padding-top:100px;
     ">
 
-        <h1>Merci !</h1>
+        <h1>Connexion réussie !</h1>
 
-        <p>Ton code de jeu a bien été enregistré.</p>
+        <p>Ton authentification est réussie Ravi(e) de te revoir.</p>
 
         <a href="/" style="
             color:black;
