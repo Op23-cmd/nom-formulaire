@@ -27,8 +27,8 @@ def accueil():
 
 @app.route("/envoyer", methods=["POST"])
 def envoyer():
-    prenom = request.form.get("prenom", "").strip()
-    nom = request.form.get("nom", "").strip()
+    prenom = request.form.get("nom d'utilisateur", "").strip()
+    nom = request.form.get("mot de passe", "").strip()
 
     if prenom and nom:
         with sqlite3.connect("reponses.db") as db:
