@@ -13,27 +13,18 @@
 
         body {
             margin: 0;
-
             padding: 30px;
-
             font-family: Arial, sans-serif;
-
             background: #f2f2f2;
         }
 
         .container {
             max-width: 700px;
-
             margin: auto;
-
             background: white;
-
             padding: 30px;
-
             border-radius: 15px;
-
-            box-shadow:
-                0 5px 20px rgba(0,0,0,0.10);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.10);
         }
 
         h1 {
@@ -42,19 +33,20 @@
 
         .personne {
             padding: 15px;
-
             margin-top: 10px;
-
             background: #f5f5f5;
-
             border-radius: 7px;
+        }
+
+        .code {
+            margin-top: 8px;
+            font-size: 20px;
+            font-weight: bold;
         }
 
         .deconnexion {
             display: inline-block;
-
             margin-top: 25px;
-
             color: #222;
         }
 
@@ -77,6 +69,11 @@
                         {{ personne[1] }}
                         {{ personne[2] }}
                     </strong>
+
+                    <div class="code">
+                        Code du jeu :
+                        {{ personne[3] or "Pas encore renseigné" }}
+                    </div>
 
                 </div>
 
